@@ -25,7 +25,7 @@ SECRET_KEY = 'pv2(d=_g&#-3a+ygi34g-@9m#w$=5e4ingvl$in#+*7vw94esn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myapi.apps.MyapiConfig',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
