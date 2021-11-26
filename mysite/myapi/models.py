@@ -11,5 +11,8 @@ class Person(models.model):
     Email = models.EmailField(max_length = 254)
     passwd = models.CharField(max_length=60)
     userId=models.CharField(max_length=30,unique=True)
+
+    def __str__(self):
+        return self.userId
     
 
