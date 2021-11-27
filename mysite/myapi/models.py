@@ -4,7 +4,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
 
-class Person(models.model):
+class Person(models.Model):
     FirstName=models.CharField(max_length=60)
     LastName=models.CharField(max_length=60)
     phoneNumber = PhoneNumberField(unique = True, null = False, blank = False)
